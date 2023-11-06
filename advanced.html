@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Advanced Search</title>
+    <style>
+        /* 添加CSS样式以匹配Google高级搜索页面的外观 */
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #search-form {
+            margin: 50px auto;
+            text-align: left;
+            width: 600px;
+        }
+        #search-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        #search-form input[type="text"] {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        #search-form input[type="submit"] {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="search-form" action="https://www.google.com/search">
+        <label for="all-words">Find pages with all these words:</label>
+        <input type="text" id="all-words" name="q">
+        <label for="exact-phrase">Find pages with this exact word or phrase:</label>
+        <input type="text" id="exact-phrase" name="as_epq">
+        <label for="any-words">Find pages with any of these words:</label>
+        <input type="text" id="any-words" name="as_oq">
+        <label for="none-words">Find pages with none of these words:</label>
+        <input type="text" id="none-words" name="as_eq">
+        <input type="submit" value="Advanced Search">
+    </form>
+    <a href="index.html">Back to Google Search</a>
+</body>
+</html>

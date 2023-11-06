@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Image Search</title>
+    <style>
+        /* 添加CSS样式以匹配Google图像搜索页面的外观 */
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #search-form {
+            margin: 50px auto;
+            text-align: center;
+        }
+        #search-form input[type="text"] {
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            padding: 12px;
+            font-size: 16px;
+        }
+        #search-form input[type="submit"] {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="search-form" action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="Google Image Search">
+        <input type="submit" value="Google Image Search">
+    </form>
+    <a href="index.html">Back to Google Search</a>
+</body>
+</html>
